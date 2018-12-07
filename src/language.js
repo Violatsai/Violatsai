@@ -7,8 +7,8 @@ var pageName = pathName.substr(0, pathName.indexOf('.'));
 
 var selectString = "<p><select id='languageselect' onchange='changeLanguages()'>";
 selectString += "<option>Choose:</option>"
-if (currentLanguage != "zh-tw") { selectString += "<option value='../" + pageName + ".html'>中文</option>";}
-if (currentLanguage != "en-us") { selectString += "<option value='en-us/" + pageName + ".html'>English</option>";}
+if (currentLanguage != "zh-tw") { selectString += "<option value='../" + "index" + ".html'>中文</option>";}
+if (currentLanguage != "en-us") { selectString += "<option value='en-us/" + "index" + ".html'>English</option>";}
 selectString += "</select></p>";
 
 languageSelector.innerHTML = selectString;
